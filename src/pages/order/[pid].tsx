@@ -36,7 +36,7 @@ export default function Order() {
         const { pid } = router.query
         try {
             if (pid) {
-                const response = await axios.delete(`http://localhost:8002/cart/${pid}/clear`);
+                const response = await axios.delete(`http://localhost:8002/cart/clear`);
                 setPaid(true)
                 setCart({
                     products: [],
